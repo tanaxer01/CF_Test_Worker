@@ -5,7 +5,7 @@ const router = new Router();
 
 const apm = ApmRUM.init({
     serviceName: 'cloudflare-worker',
-    serverUrl: ELASTIC_APM_SERVER_URL,
+    serverUrl: "https://af5fa4e4cf0f41ea957b815e9d6626fe.apm.southamerica-east1.gcp.elastic-cloud.com:443",
     environment: 'production'
 })
 
