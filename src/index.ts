@@ -16,7 +16,7 @@ router.get("/temp", async (req, res) => {
 	const tx = apm.startTransaction('fetch-temp');
 
 	try {
-		const response = await fetch("http://api.meteored.cl/index.php?api_lang=cl&localidad=18578&affiliate_id=dr91po78hmpl&v=3.0");
+		const response = await fetch("ahttp://api.meteored.cl/index.php?api_lang=cl&localidad=18578&affiliate_id=dr91po78hmpl&v=3.0");
 		const body = await response.text();
 
 		return res.text(body);
