@@ -1,0 +1,5 @@
+name = "server3"
+main = "src/index.ts"
+compatibility_date = "2022-12-22"
+node_compat = true
+platform= 'node'
