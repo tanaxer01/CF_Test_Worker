@@ -21,4 +21,11 @@ jobs:
         with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
           accountId: ${{ secrets.CF_ACCOUNT_ID }} 
+          secrets: |
+            ELASTIC_APM_SERVER_URL
+        env: 
+          ELASTIC_APM_SERVER_URL: ${{ secrets.ELASTIC_APM_URL }}
+
+
+          
 

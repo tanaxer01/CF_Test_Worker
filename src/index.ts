@@ -4,8 +4,9 @@ import * as ApmRUM from '@elastic/apm-rum';
 const router = new Router();
 
 const apm = ApmRUM.init({
-    serviceName: 'Cloudflare-Worker',
-    serverUrl: 'https://af5fa4e4cf0f41ea957b815e9d6626fe.apm.southamerica-east1.gcp.elastic-cloud.com:443',
+    serviceName: 'cloudflare-worker',
+    serverUrl: ELASTIC_APM_SERVER_URL,
+    environment: 'production'
 })
 
 router.get("/", (req, res) => res.text("Hello there!") );
